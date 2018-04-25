@@ -1,5 +1,4 @@
 // create user
-
 var createUser = function(){
   var email = $('#r-e');
   var pwd = $('#r-pwd');
@@ -20,7 +19,6 @@ var createUser = function(){
 }
 
 // send email confirmation
-
 var sendEmail = function(){
   var user = firebase.auth().currentUser; // get the current User
   user.sendEmailVerification()
@@ -34,7 +32,6 @@ var sendEmail = function(){
 
 
 // get user
-
 var getUser = function(){
   firebase.auth().onAuthStateChanged(function(user){
     // detecta si existe o no existe, en la plataforma o en la sesion
@@ -54,10 +51,8 @@ var getUser = function(){
 }
 
 var login = function(){
-
   var email = $('#log-e');
   var pwd = $('#log-pwd');
-
   firebase.auth().signInWithEmailAndPassword(email.val(),pwd.val())
     .catch(function(err){
       console.log(err);
@@ -75,11 +70,9 @@ var logout = function(){
   .catch(function(err){
     console.log('Firebase error, logging out', err);
   })
-
 }
 
 var sendRecoverPass = function() {
-
    var auth = firebase.auth();
    var emailAddress = $('#recovery-e').val();
    auth.sendPasswordResetEmail(emailAddress)
@@ -89,11 +82,9 @@ var sendRecoverPass = function() {
    .catch(function(err){
      console.log('Firebase Recovery Email error',err);
    });
-
 }
 
 getUser();
-
 
 // Otros metodos
 /*

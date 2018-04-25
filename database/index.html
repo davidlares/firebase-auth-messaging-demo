@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Firebase - First App</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script type="text/javascript" src="/firebase-settings.js"></script>
+    <script type="text/javascript" src="/database.js"></script>
+    <script type="text/javascript" src="/fcm.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <h1>DavidBase</h1>
+            <p>Members Area - <a href="/index.html">Back to Dashboard</a></p>
+            <hr>
+            <div class="col-md-12" id="access">
+              <ul class="nav nav-tabs" id="myTabs" role="tablist">
+                <li role="presentation" class="active">
+                  <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="false">
+                    Members
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade in active" role="tabpanel" id="home" aria-labelledby="home-tab">
+                  <div class="row">
+                    <div class="col-md-4" style="margin-top: 15px">
+                      <p class="text-center">New Member</p>
+                      <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Name</label>
+                          <input type="text" class="form-control" id="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Role</label>
+                          <input type="text" class="form-control" id="role" placeholder="Role">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Company</label>
+                          <input type="text" class="form-control" id="company" placeholder="Company">
+                        </div>
+                        <input type="button" class="btn btn-default" id="submit-login" onclick="saveRecord()" value="Create">
+                      </form>
+                    </div>
+                    <div class="col-md-offset-1 col-md-6 text-center" style="margin-top: 15px">
+                        <table class="table">
+                          <thead>
+                              <tr>
+                                 <th class="text-center">#</th>
+                                 <th class="text-center">Member</th>
+                                 <th class="text-center">Role</th>
+                                 <th class="text-center">Company</th>
+                                 <th class="text-center">Edit</th>
+                                 <th class="text-center">Delete</th>
+                              </tr>
+                          </thead>
+                          <tbody id="members-table">
+                          </tbody>
+                        </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+       </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
