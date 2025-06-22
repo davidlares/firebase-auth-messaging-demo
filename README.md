@@ -1,4 +1,4 @@
-# DavidBase
+## DavidBase
 
 DavidBase es un proyecto (demo) para demostrar el uso de los módulos de Autenticación, Hosting, FCM, y Database de Google Firebase y algunas características usando sus métodos nativos en JavaScript. Firebase sirve de gran alternativa para reemplazar y escalar correctamente el Backend de una app, usando las bondades de Tiempo Real de Google, y orientando fuertemente el desarrollo a estrategias al front-end.
 
