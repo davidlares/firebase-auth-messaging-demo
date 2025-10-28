@@ -1,24 +1,22 @@
-## DavidBase
+## Firebase Auth messaging demo
 
-DavidBase es un proyecto (demo) para demostrar el uso de los módulos de Autenticación, Hosting, FCM, y Database de Google Firebase y algunas características usando sus métodos nativos en JavaScript. Firebase sirve de gran alternativa para reemplazar y escalar correctamente el Backend de una app, usando las bondades de Tiempo Real de Google, y orientando fuertemente el desarrollo a estrategias al front-end.
+This is a demo project to demonstrate the use of Google Firebase's Authentication, Hosting, FCM, and Database modules, as well as some features using its native JavaScript methods. Firebase serves as a great alternative to replace and properly scale an app's backend, leveraging Google's Real-Time capabilities and strongly focusing development on front-end strategies.
 
-## Requisitos
+## Prerequisites
 
-- Generar un proyecto dentro de la consola de Firebase
-- Colocar las credenciales correctas dentro del archivo firebase.js
-- Habilitar las opciones de Autenticacion via email dentro de proyecto en Firebase
+- Generate a project within the Firebase console
+- Enter the correct credentials in the firebase.js file
+- Enable email authentication options within the Firebase project
 
-## Uso
+## Usage
 
-Puede correr bajo cualquier entorno o servidor local, sobre un ambiente Apache, Nginx o sus derivados
-
+It can run in any local environment or server, on Apache, Nginx, or their derivatives
 ```
 php -S 127.0.0.1:8000
 ```
 
-## Créditos
-[David E Lares S](https://davidlares.com)
+## Credits
+[David Lares S](https://davidlares.com)
 
-## Licencia
+## License
 [MIT](https://opensource.org/licenses/MIT)
-
